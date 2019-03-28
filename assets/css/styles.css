@@ -8,6 +8,7 @@ body {
     font-family: 'Lato';
     width: 100%;
     height: 100%;
+    
 }
 h1, h2, h3, h4 {
     color: #546267;
@@ -26,13 +27,20 @@ h4 {
     font-size: 1.5em;
 }
 a {
-    color: #c16e70;
+    color: #4224fb;
 }
 p, div {
     font-family: 'Lato';
 }
 p {
+    color: #3b3b3b;
+    line-height: 1.5;
     margin-bottom: 1.2em;
+}
+li {
+    color: #3b3b3b;
+    line-height: 1.5;
+    margin-bottom: 1em;
 }
 
 /** header **/
@@ -65,6 +73,7 @@ nav ul {
 }
 nav ul li {
     display: inline-block;
+    line-height: 1;
     margin-right: 30px;
 }
 nav ul li a {
@@ -73,6 +82,12 @@ nav ul li a {
     font-family: 'Prosto One';
     text-decoration: none;
 }
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #4224fb;
+}
+
 
 /** logo **/
 .logo {
@@ -155,36 +170,59 @@ $color5: rgba(66, 36, 251, 1);
 .main .row {
     padding-bottom: 30px;
 }
-
-/** home **/
 .col-title {
     margin: 20px 0;
     padding-bottom: 20px;
     border-bottom: 1px solid #E8E8E8;
 }
 
+
+/** home **/
+.featured img {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
 /** portfolio **/
 .portfolio .wrapper {
     height: auto;
     top: 170px;
 }
 .portfolio-tile {
-    background-color: #F8FFFF;
-    height: 400px;
-    padding-top: 300px;
-    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 277px;
     margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
-
-.portfolio-tile--title {
+.portfolio-tile--caption {
     color: #2b2b2b;    
-    background-color: rgba(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, .9);
+    bottom: -110px;
     display: block;
     padding: 10px;
+    position: absolute;
+    transition: all .4s ease-out;
+    width: 100%;
 }
-.portfolio-tile--title:hover {
-    background-color: white;
+.portfolio-tile:hover .portfolio-tile--caption {
+    bottom: 10px;
 }
+.portfolio-tile--title {
+    font-size: 1.3em;
+}
+.portfolio-tile--caption a {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 0.9em;
+}
+.portfolio-tile--caption a:first-of-type {
+    border-right: 1px solid #3b3b3b;
+}
+
+
 
 
 /** contact **/
