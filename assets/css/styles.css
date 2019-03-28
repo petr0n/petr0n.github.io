@@ -57,7 +57,7 @@ header {
     left: 0;
     opacity: 0;
     position: absolute;
-    transition: opacity .3s ease-out;
+    transition: all .3s ease-out;
     top: 0; 
     width: 100%; 
     z-index: -1;
@@ -213,6 +213,11 @@ $color5: rgba(66, 36, 251, 1);
 .portfolio-tile--title {
     font-size: 1.3em;
 }
+.portfolio-tile--title {
+    line-height: 1;
+    margin-bottom: .2em;
+}
+
 .portfolio-tile--caption a {
     display: inline-block;
     padding: 0 15px;
@@ -224,21 +229,6 @@ $color5: rgba(66, 36, 251, 1);
 
 
 
-
-/** contact **/
-.contact-form {
-    padding: 15px;
-}
-.contact-form input, 
-.contact-form textarea {
-    color: #151e3f;
-} 
-.contact-form .btn {
-    color: white;
-    background-color: #151e3f;
-}
-
-
 /** footer **/
 footer {
     background: linear-gradient(rgba(43,43,43,0.97), rgba(70,70,70,0.9));
@@ -247,8 +237,62 @@ footer {
     color: #f2f3d9;
     position: fixed;
     width: 100%;
+    z-index: 100;
 }
 footer .copy {
     padding: 30px;
     text-align: center;
+}
+
+
+/** smaller screens **/
+@media screen and (max-width: 992px) {
+
+}
+
+/** mobile and smaller **/
+@media screen and (max-width: 768px) {
+    .logo {
+        position: relative;
+        text-align: center;
+        right: unset;
+    }
+    header {
+        position: absolute;
+        top: 100px;
+        height: auto;
+    }
+    header.sticky {
+        position: fixed;
+        top: 0;
+    }
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    .shapes-wrapper {
+        top: 0;
+    }
+    .wrapper {
+        display: block;
+        top: 110px;
+        height: auto;
+    }
+    .portfolio-tile--caption {
+        bottom: 0;
+    }
+    footer .copy {
+        padding: 10px;
+    }
+    
+}
+
+/** mobile vertical **/
+@media screen and (max-width: 520px) {
+    
 }
