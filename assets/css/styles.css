@@ -6,9 +6,8 @@
 body {
     background: #2b2b2b;
     font-family: 'Lato';
-    overflow-x: hidden;
     width: 100%;
-    height: 101vh;
+    height: 100%;
 }
 h1, h2, h3, h4 {
     color: #546267;
@@ -105,6 +104,12 @@ $color3: rgba(19, 5, 77, 1);
 $color4: rgba(65, 9, 105, 1);
 $color5: rgba(66, 36, 251, 1);
 */
+.shapes-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+}
 .shapes {
     position: absolute;
     height: 80vw;
@@ -114,7 +119,7 @@ $color5: rgba(66, 36, 251, 1);
 }
 .shape1 {
     background: linear-gradient(rgba(19, 5, 77, 0.45) 0%, rgba(66, 36, 251, 0.6) 100%) no-repeat 50% 50% / 100% 100%;
-    transform: rotate(41deg);
+    transform: rotate(43deg);
     z-index: 1;
 }
 .shape2 {
@@ -124,14 +129,12 @@ $color5: rgba(66, 36, 251, 1);
 }
 .shape3 {
     background: linear-gradient(260deg, rgba(65, 9, 105, 0.45) 0%, rgba(66, 36, 251, 0.6) 100%) no-repeat 50% 42% / 100% 100%;
-    transform: rotate(61deg);
-    right: -45vw;
+    transform: rotate(58deg);
     z-index: 3;
 }
 .shape4 {
     background: linear-gradient(260deg, rgba(224, 224, 224, 0.65) 0%, rgba(255, 255, 255, 0.6) 100%) no-repeat 50% 42% / 100% 100%;
-    transform: rotate(45deg);
-    right: -74vw;
+    transform: rotate(66deg);
     z-index: 4;
 }
 
@@ -140,15 +143,14 @@ $color5: rgba(66, 36, 251, 1);
 .wrapper {
     align-items: center;
     display: flex;
-    height: 100%;
+    height: 120vh;
     justify-content: center;
-    margin-bottom: 200px;
     position: relative;
     z-index: 10;
     width: 100%;
 }
 .main {
-    background-color: white;
+    background-color: rgba(255,255,255,0.8);
 }
 .main .row {
     padding-bottom: 30px;
@@ -162,6 +164,10 @@ $color5: rgba(66, 36, 251, 1);
 }
 
 /** portfolio **/
+.portfolio .wrapper {
+    height: auto;
+    top: 170px;
+}
 .portfolio-tile {
     background-color: #F8FFFF;
     height: 400px;
