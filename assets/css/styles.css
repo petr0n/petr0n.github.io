@@ -46,7 +46,11 @@ h4 {
     font-size: 1em;
 }
 a {
-    color: var(--color-black);
+    color: var(--color-green);
+}
+a:hover,
+a:active {
+    color: var(--color-green-lt);
 }
 p, div {
     font-family: 'Lato';
@@ -69,6 +73,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 100;
+    border-bottom: 3px solid var(--color-green-lt);
 }
 header .container {
     align-items: center;
@@ -78,9 +83,6 @@ header .container {
 }
 
 /** logo **/
-.logo {
-    
-}
 .logo h1 {
     color: var(--color-purple);
     display: block;
@@ -120,7 +122,6 @@ nav ul li a:hover {
 
 
 
-
 /** shared **/
 .wrapper {
     align-items: center;
@@ -142,9 +143,19 @@ nav ul li a:hover {
 
 
 /** home **/
+.featured .col-title p {
+    font-size: .8em;
+    margin-bottom: 2px;
+}
 .featured img {
-    max-width: 100%;
+    min-width: 100%;
     margin-bottom: 1em;
+    box-shadow: 7px 7px 24px 0px #aaa;
+}
+
+/** about **/
+.skills {
+    columns: 2;
 }
 
 /** portfolio **/
@@ -194,15 +205,15 @@ nav ul li a:hover {
 
 /** footer **/
 footer {
-    background: linear-gradient(rgba(43,43,43,0.97), rgba(70,70,70,0.9));
+    background: var(--color-green-lt);
     bottom: 0;
     left: 0;
-    color: var(--color-white);
+    color: var(--color-gray-lt);
     width: 100%;
     z-index: 100;
 }
 footer .copy {
-    padding: 30px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -272,6 +283,8 @@ footer .copy {
     position: relative;
     text-align: right;
     width: 100%;
+    box-shadow: 7px 7px 24px 0px #aaa;
+
   }
   
   .portfolio-tile *,
@@ -354,6 +367,7 @@ footer .copy {
     margin: 0;
     opacity: 0;
     letter-spacing: 1px;
+    color: var(--color-gray-lt);
   }
   
   .portfolio-tile h3 {
