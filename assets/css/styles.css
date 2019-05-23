@@ -165,113 +165,6 @@ nav ul li a:hover {
 .portfolio .wrapper {
     height: auto;
 }
-/* .portfolio-tile {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 277px;
-    margin-bottom: 70px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-} */
-.portfolio-tile--title {
-    color: var(--color-green);
-    font-size: 1.3em;
-    line-height: 2;
-}
-.portfolio-tile--caption {
-    color: #2b2b2b;    
-    background-color: rgba(255, 255, 255, .9);
-    bottom: -110px;
-    display: block;
-    padding: 10px;
-    position: absolute;
-    transition: all .4s ease-out;
-    width: 100%;
-}
-.portfolio-tile:hover .portfolio-tile--caption {
-    bottom: 10px;
-}
-
-.portfolio-tile figcaption .links a {
-    color: var(--color-white);
-    display: inline-block;
-    padding: 0 15px;
-    font-size: 0.8em;
-}
-.portfolio-tile--caption a:first-of-type {
-    border-right: 1px solid var(--color-black);
-}
-
-
-
-/** footer **/
-footer {
-    background: var(--color-green-lt);
-    bottom: 0;
-    left: 0;
-    color: var(--color-gray-lt);
-    width: 100%;
-    z-index: 100;
-}
-footer .copy {
-    padding: 5px;
-    text-align: center;
-}
-
-
-/** smaller screens **/
-@media screen and (max-width: 992px) {
-
-}
-
-/** mobile and smaller **/
-@media screen and (max-width: 768px) {
-    .logo {
-        position: relative;
-        text-align: center;
-        right: unset;
-    }
-    header {
-        position: absolute;
-        top: 100px;
-        height: auto;
-    }
-    header.sticky {
-        position: fixed;
-        top: 0;
-    }
-    nav ul {
-        text-align: center;
-    }
-    nav ul li {
-        margin: 0 10px;
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-    .shapes-wrapper {
-        top: 0;
-    }
-    .wrapper {
-        display: block;
-        top: 110px;
-        height: auto;
-    }
-    .portfolio-tile--caption {
-        bottom: 0;
-    }
-    footer .copy {
-        padding: 10px;
-    }
-    
-}
-
-/** mobile vertical **/
-@media screen and (max-width: 520px) {
-    
-}
 
 .portfolio-tile {
     background-color: #fff;
@@ -435,3 +328,104 @@ footer .copy {
   transition-delay: 0.1s;
 }
 
+
+.portfolio-tile--title {
+    color: var(--color-green);
+    font-size: 1.3em;
+    line-height: 2;
+}
+.portfolio-tile--caption {
+    color: #2b2b2b;    
+    background-color: rgba(255, 255, 255, .9);
+    bottom: -110px;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    transition: all .4s ease-out;
+    width: 100%;
+}
+.portfolio-tile:hover .portfolio-tile--caption {
+    bottom: 10px;
+}
+
+.portfolio-tile figcaption .links a {
+    color: var(--color-white);
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 0.8em;
+}
+.portfolio-tile--caption a:first-of-type {
+    border-right: 1px solid var(--color-black);
+}
+
+
+
+/** footer **/
+footer {
+    background: var(--color-green-lt);
+    bottom: 0;
+    left: 0;
+    color: var(--color-gray-lt);
+    width: 100%;
+    z-index: 100;
+}
+footer .copy {
+    padding: 5px;
+    text-align: center;
+}
+
+
+/** smaller screens **/
+@media screen and (max-width: 992px) {
+
+}
+
+/** mobile and smaller **/
+@media screen and (max-width: 768px) {
+    .logo {
+        text-align: center;
+        padding: 10px 0;
+    }
+    header {
+        height: auto;
+        max-width: 100%;
+        padding: 0;
+        width: 100%;
+    }
+    header .container {
+        display: block;
+        text-align: center;
+    }
+    nav ul {
+        text-align: center;
+        margin: 0 auto;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    .wrapper {
+        display: block;
+        height: auto;
+        padding-top: 80px;
+    }
+    .featured img {
+        max-width: 100%;
+        min-width: auto;
+        box-shadow: 4px 4px 12px 0px #aaa;
+    }
+    .portfolio-tile--caption {
+        bottom: 0;
+    }
+    footer .copy {
+        padding: 10px;
+    }
+    
+}
+
+/** mobile vertical **/
+@media screen and (max-width: 520px) {
+    
+}
