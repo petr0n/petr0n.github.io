@@ -22,10 +22,10 @@ green #28B829
 
 /** html elements **/
 body {
-    /* background-image: url('../../assets/images/bg.png');
+    background-image: url('../../assets/images/bg.png');
     background-repeat: no-repeat;
-    background-position: -39px 199px;
-    background-size: 80%; */
+    background-position: -399px -100px;
+    background-size: 80%;
     background-color: var(--color-white);
     color: var(--color-black);
     font-family: var(--font-body);
